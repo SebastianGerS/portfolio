@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './Assets/Images/logo.svg';
+
 /* eslint-disable react/prefer-stateless-function, react/no-unescaped-entities */
 class App extends Component {
   render() {
