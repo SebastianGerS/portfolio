@@ -7,7 +7,8 @@ const Router = () => (
   <BrowserRouter>
     <Switch>
       <Route
-        exactpath="/"
+        exact
+        path="/"
         render={() => (
           <div>
             <Header />
@@ -16,11 +17,29 @@ const Router = () => (
         )}
       />
       <Route
-        exactpath="/portfolio"
+        path="/portfolio"
         render={() => (
           <div>
             <Header />
-            <Views.Home />
+            <Views.Portfolio />
+          </div>
+        )}
+      />
+      <Route
+        path="/cv"
+        render={() => (
+          <div>
+            <Header />
+            <Views.Cv />
+          </div>
+        )}
+      />
+      <Route
+        path="/links"
+        render={() => (
+          <div>
+            <Header />
+            <Views.Links />
           </div>
         )}
       />

@@ -1,10 +1,9 @@
 import React from 'react';
+import PageHeading from './PageHeading';
 
 const Home = () => (
   <div className="Home">
-    <h2 className="intro">
-      COMING SOON
-    </h2>
+    <PageHeading name="Home" />
   </div>
 );
 
