@@ -7,7 +7,16 @@ const Router = () => (
   <BrowserRouter>
     <Switch>
       <Route
-        path="/"
+        exactpath="/"
+        render={() => (
+          <div>
+            <Header />
+            <Views.Home />
+          </div>
+        )}
+      />
+      <Route
+        exactpath="/portfolio"
         render={() => (
           <div>
             <Header />
